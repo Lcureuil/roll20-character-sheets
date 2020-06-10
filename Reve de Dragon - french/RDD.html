@@ -65,7 +65,7 @@
 		<td>EMPATHIE</td>
 		<td><input type="number" name="attr_empathie_value" value="0" style="text-align:center"></td>
 		<td><input type="number" name="attr_empathie_xp" value="0" style="text-align:center"></td>			
-		</tr>
+		<td><button  type="roll" style="margin-left:0px;line_height:10px;height:20px;margin-bottom:2px;" title="empathie" name="roll_empathie" value="&{template:RDD}{{name=empathie}} {{Roll=[[1D100cs<0cf>100]]}} {{difficulte=[[?{Difficulté ?|0}+@{etat_general}]]}}  {{attribut=[[@{empathie_value}]]}} {{echec_part=[[ceil(0.2*floor((((?{Difficulté ?|0}+@{etat_general})/10)+1)*(@{empathie_value}*5)))+80]]}}  {{signif=[[floor(0.5*floor((((?{Difficulté ?|0}+@{etat_general})/10)+1)*(@{empathie_value}*5)))]]}} {{reussite_par=[[ceil(0.2*floor((((?{Difficulté ?|0}+@{etat_general})/10)+1)*(@{empathie_value}*5)))]]}} {{cible=[[floor((((?{Difficulté ?|0}+@{etat_general})/10)+1)*(@{empathie_value}*5))]]}} {{echec_tot=[[ceil(100-(100-floor((((?{Difficulté ?|0}+@{etat_general})/10)+1)*(@{empathie_value}*5)))*0.1)+1]]}}"></button></td></tr>
 		<tr>
 		<td>FORCE</td>
 		<td><input type="number" name="attr_force_value" value="0" style="text-align:center"></td>
